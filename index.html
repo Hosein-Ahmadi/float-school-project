@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .header {
+            padding: 10px;
+            background-color: #4D6370;
+        }
+
+        .header_item {
+            display: inline-block;
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .header_last_item {
+            float: right;
+        }
+
+        .container {
+            width: 98%;
+            margin: 20px auto;
+        }
+
+        .left_side {
+            float: left;
+            width: 30%;
+        }
+
+        .user_info {
+            padding: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+
+        .user_info_name {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .user_info_img {
+            display: block;
+            width: 45%;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        .user_info_bottom {}
+
+        .user_info_item {}
+
+        .user_info_item_img {
+            width: 20px;
+            height: 20px;
+            margin: 10px 7px -2px 0;
+        }
+
+        .user_info_item_text {
+            display: inline-block;
+        }
+
+        .center {
+            float: left;
+            width: 50%;
+        }
+
+        .form {
+            padding: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            margin: 0 15px;
+        }
+
+        .form_title {
+            font-size: 15px;
+            margin-top: 5px;
+            color: gray;
+        }
+
+        .form_input {
+            display: block;
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            text-align: center;
+            color: #fff;
+            background-color: #607D8B;
+            border: none;
+        }
+
+        .article {
+            padding: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            margin: 15px 15px;
+        }
+
+        .article_top {
+            margin-bottom: 15px;
+        }
+
+        .article_user_img {
+            width: 65px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .article_user_name {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .article_time {
+            display: inline-block;
+            float: right;
+        }
+
+        .article_bottom {}
+
+        .article_text {
+            font-size: 15px;
+
+        }
+
+        .article_images {}
+
+        .article_img {
+            width: 49%;
+        }
+
+        .article_buttons {
+            margin-top: 10px;
+        }
+
+        .form_btn {}
+
+        .right_side {
+            float: left;
+            width: 20%;
+        }
+
+        .event {
+            padding: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .event_titlle {
+            margin-top: 5px;
+        }
+
+        .event_img {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .event_name {}
+
+        .event_time {}
+
+        .event_button {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #E0E5E9;
+            border: none;
+        }
+
+        .friend {
+            padding: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .friend_titlle {
+            margin-top: 5px;
+        }
+
+        .friend_img {
+            width: 45%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .friend_name {
+            margin: 5px;
+        }
+
+        .friend_time {}
+
+        .friend_button {
+            float: left;
+            width: 49%;
+            text-align: center;
+            padding: 10px;
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .footer {
+            background-color: #4D6370;
+        }
+
+        .footer_top {
+            padding: 10px;
+        }
+
+        .footer_top_item {
+            text-align: center;
+        }
+
+        .footer_bottom {
+            background-color: #303F46;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .footer_bottom_text {
+            color: #fff;
+
+        }
+
+        .footer_bottom_text a {
+            color: #fff;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="#" class="header_item">Home</a>
+        <a href="#" class="header_item">About</a>
+        <a href="#" class="header_item">Groups</a>
+        <a href="#" class="header_item header_last_item">History</a>
+    </div>
+    <div class="container">
+        <!-- left side -->
+        <div class="left_side">
+            <div class="user_info">
+                <h3 class="user_info_name">My Profile</h3>
+                <img src="images/avatar3.png" alt="user avatar" class="user_info_img">
+                <hr>
+                <div class="user_info_bottom">
+                    <div class="user_info_item">
+                        <img src="images/icon1.png" alt="icon" class="user_info_item_img">
+                        <p class="user_info_item_text">Designer,UI</p>
+                    </div>
+                    <div class="user_info_item">
+                        <img src="images/icon2.png" alt="icon" class="user_info_item_img">
+                        <p class="user_info_item_text">London,UK</p>
+                    </div>
+                    <div class="user_info_item">
+                        <img src="images/icon3.png" alt="icon" class="user_info_item_img">
+                        <p class="user_info_item_text">April 1,1988 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- center -->
+        <div class="center">
+            <div class="form">
+                <p class="form_title">Social Media template by w3.css</p>
+                <input type="text" value="Status:Feeling Blue" class="form_input">
+                <button class="btn form_btn">Post</button>
+            </div>
+            <div class="article">
+                <div class="article_top">
+                    <img src="images/avatar2.png" alt="user avatar" class="article_user_img">
+                    <h2 class="article_user_name">John Doe</h2>
+                    <p class="article_time">1 min</p>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <div class="article_bottom">
+                    <p class="article_text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit voluptate libero, eum repellat
+                        unde
+                        perferendis officiis hic error numquam reprehenderit nulla inventore commodi animi omnis harum
+
+                    </p>
+                    <div class="article_images">
+                        <img src="images/nature.jpg" alt="article img" class="article_img">
+                        <img src="images/lights.jpg" alt="article img" class="article_img">
+                    </div>
+                    <div class="article_buttons">
+                        <button class="btn">Like</button>
+                        <button class="btn">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right side -->
+        <div class="right_side">
+            <div class="event">
+                <h4 class="event_titlle">Upcoming Events:</h4>
+                <img src="images/forest.jpg" alt="event img" class="event_img">
+                <h3 class="event_name">Holiday</h3>
+                <p class="event_time">Friday 15:00</p>
+                <button class="event_button">Info</button>
+            </div>
+            <div class="friend">
+                <h4 class="friend_titlle">Friend Request</h4>
+                <img src="images/avatar5.png" alt="friend img" class="friend_img">
+                <p class="friend_name">Jane Doe</p>
+                <div class="friend_buttons">
+                    <button style="background-color: #93CE94;" class="friend_button">1</button>
+                    <button style="background-color: #F88D85;" class="friend_button">2</button>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_top_item">
+                <a href="#" style="margin-right: 20px;" class="header_item">Home</a>
+                <a href="#" class="header_item"> Groups</a>
+            </div>
+            <div class="footer_top_item">
+                <a href="#" style="margin-right: 20px;" class="header_item">About</a>
+                <a href="#" class="header_item">History</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p class="footer_bottom_text">Powered by <a href="#">w3.css</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
